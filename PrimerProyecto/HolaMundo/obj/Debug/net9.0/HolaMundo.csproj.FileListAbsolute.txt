@@ -1,0 +1,15 @@
+D:\NET\PrimerProyecto\HolaMundo\bin\Debug\net9.0\HolaMundo.exe
+D:\NET\PrimerProyecto\HolaMundo\bin\Debug\net9.0\HolaMundo.deps.json
+D:\NET\PrimerProyecto\HolaMundo\bin\Debug\net9.0\HolaMundo.runtimeconfig.json
+D:\NET\PrimerProyecto\HolaMundo\bin\Debug\net9.0\HolaMundo.dll
+D:\NET\PrimerProyecto\HolaMundo\bin\Debug\net9.0\HolaMundo.pdb
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\HolaMundo.GeneratedMSBuildEditorConfig.editorconfig
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\HolaMundo.AssemblyInfoInputs.cache
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\HolaMundo.AssemblyInfo.cs
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\HolaMundo.csproj.CoreCompileInputs.cache
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\HolaMundo.sourcelink.json
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\HolaMundo.dll
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\refint\HolaMundo.dll
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\HolaMundo.pdb
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\HolaMundo.genruntimeconfig.cache
+D:\NET\PrimerProyecto\HolaMundo\obj\Debug\net9.0\ref\HolaMundo.dll
