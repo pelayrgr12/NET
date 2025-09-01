@@ -25,7 +25,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
             ValidIssuer = jwt["Issuer"],
             ValidAudience = jwt["Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt["Key"]!))
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(jwt["Key"]!)
+            )
         };
         options.Events = new JwtBearerEvents
         {
@@ -40,7 +42,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddAuthorization();
 
-// ---------- CORS (permite todos los orígenes con credenciales) ----------
+// ---------- CORS ----------
 builder.Services.AddCors(o =>
 {
     o.AddPolicy("AllowAll", p =>
@@ -50,19 +52,27 @@ builder.Services.AddCors(o =>
          .AllowCredentials());
 });
 
-// ---------- OpenAPI (integrado .NET) ----------
-builder.Services.AddOpenApi();
+// ---------- Swagger  ----------
+builder.Services.AddEndpointsApiExplorer(); // explorador de endpoints
+builder.Services.AddSwaggerGen();
 
 // ---------- Controllers ----------
 builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// OpenAPI integrado
+// ---------- Swagger ----------
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi(); // documentación en /openapi/v1.json
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "AuthAPI v1");
+        c.RoutePrefix = "swagger"; // UI en /swagger
+    });
 }
+
+// Para poder ver el swagger http://localhost:5210/swagger
 
 app.UseHttpsRedirection();
 

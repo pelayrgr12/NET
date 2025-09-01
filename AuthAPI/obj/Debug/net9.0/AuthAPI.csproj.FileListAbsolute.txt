@@ -141,3 +141,6 @@ D:\NET\AuthAPI\obj\Debug\net9.0\refint\AuthAPI.dll
 D:\NET\AuthAPI\obj\Debug\net9.0\AuthAPI.pdb
 D:\NET\AuthAPI\obj\Debug\net9.0\AuthAPI.genruntimeconfig.cache
 D:\NET\AuthAPI\obj\Debug\net9.0\ref\AuthAPI.dll
+D:\NET\AuthAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\NET\AuthAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\NET\AuthAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
