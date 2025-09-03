@@ -2578,32 +2578,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\X\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NET\\tests\\AuthAPI.UnitTests\\AuthAPI.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\NET\\tests\\AuthAPI.UnitTests\\AuthAPI.UnitTests.csproj",
       "projectName": "AuthAPI.UnitTests",
-      "projectPath": "D:\\NET\\tests\\AuthAPI.UnitTests\\AuthAPI.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\X\\.nuget\\packages\\",
-      "outputPath": "D:\\NET\\tests\\AuthAPI.UnitTests\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\NET\\tests\\AuthAPI.UnitTests\\AuthAPI.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\NET\\tests\\AuthAPI.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\X\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\NET\\src\\AuthAPI\\AuthAPI.csproj": {
-              "projectPath": "D:\\NET\\src\\AuthAPI\\AuthAPI.csproj"
+            "C:\\Users\\Usuario\\Documents\\GitHub\\NET\\src\\AuthAPI\\AuthAPI.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\NET\\src\\AuthAPI\\AuthAPI.csproj"
             }
           }
         }
@@ -2664,7 +2671,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
