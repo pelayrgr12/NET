@@ -27,6 +27,10 @@ public class AuthController : ControllerBase
         _cfg = cfg;
     }
 
+    public AuthController()
+    {
+    }
+
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] RegistroDTO dto)
     {
