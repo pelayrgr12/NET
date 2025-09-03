@@ -26,18 +26,13 @@ public class AuthController : ControllerBase
         _db = db;
         _cfg = cfg;
     }
-
-    public AuthController()
-    {
-    }
-
+    
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] RegistroDTO dto)
     {
 
         if (!ModelState.IsValid) //verifica si el modelo es válido
          return BadRequest(ModelState);
-
 
         var email = dto.Correo.Trim().ToLowerInvariant();
 

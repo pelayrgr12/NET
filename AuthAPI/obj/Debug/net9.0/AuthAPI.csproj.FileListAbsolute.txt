@@ -436,3 +436,4 @@ C:\Users\Usuario\Documents\GitHub\NET\src\AuthAPI\obj\Debug\net9.0\refint\AuthAP
 C:\Users\Usuario\Documents\GitHub\NET\src\AuthAPI\obj\Debug\net9.0\AuthAPI.pdb
 C:\Users\Usuario\Documents\GitHub\NET\src\AuthAPI\obj\Debug\net9.0\AuthAPI.genruntimeconfig.cache
 C:\Users\Usuario\Documents\GitHub\NET\src\AuthAPI\obj\Debug\net9.0\ref\AuthAPI.dll
+D:\NET\AuthAPI\bin\Debug\net9.0\xunit.runner.json
