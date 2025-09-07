@@ -5,12 +5,8 @@ using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using AuthAPI.DTO;
-using AuthAPI.Models;
+using AuthAPI.src.Models;
 using AuthAPI.Utils;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using Microsoft.IdentityModel.Tokens;
-
 
 namespace AuthAPI.Controllers;
 
@@ -43,7 +39,7 @@ public class AuthController : ControllerBase
         {
             Nombre = dto.Nombre,
             Correo = email,
-            contrasena = PasswordHasher.Hash(dto.Contrasena),
+            Contrasena = PasswordHasher.Hash(dto.Contrasena),
             Edad = dto.Edad,
             IdRol = dto.IdRol     
         };
@@ -66,7 +62,7 @@ public class AuthController : ControllerBase
         //Ese DUMMY está para igualar el tiempo de cálculo tanto si el usuario existe como si no,
         //  y así evitar que un atacante deduzca qué correos/usuarios son válidos.
         const string DUMMY = "$argon2id$v=19$m=65536,t=3,p=1$c29tZXNhbHQAAAAAAAAAAA$gX7sT4cU2pW8h1QfWq0n1w==";
-        var hash = usuario?.contrasena ?? DUMMY;
+        var hash = usuario?.Contrasena ?? DUMMY;
 
         var ok = PasswordHasher.Verify(hash, dto.Contrasena);
         if (usuario == null || !ok)

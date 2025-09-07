@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // ---------- EF Core (MySQL) ----------
 var cs = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AuthAPI.AppDbContext>(opts =>
+builder.Services.AddDbContext<AuthAPI.src.Models.AppDbContext>(opts =>
 {
     var serverVersion = ServerVersion.AutoDetect(cs);
     opts.UseMySql(cs, serverVersion);

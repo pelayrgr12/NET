@@ -1,4 +1,4 @@
-using AuthAPI.Models;
+using AuthAPI.src.Models;
 
 namespace AuthAPI.DTO
 {
